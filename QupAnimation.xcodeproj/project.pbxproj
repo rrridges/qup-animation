@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9AE0AB219EC9161005E276D /* daftpunk.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AE0AAF19EC9161005E276D /* daftpunk.png */; };
+		C9AE0AB319EC9161005E276D /* aboveandbeyond.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AE0AB019EC9161005E276D /* aboveandbeyond.png */; };
+		C9AE0AB419EC9161005E276D /* prettylights.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AE0AB119EC9161005E276D /* prettylights.png */; };
 		C9D04CB219EC2C1700B9AE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D04CB119EC2C1700B9AE01 /* AppDelegate.swift */; };
 		C9D04CB419EC2C1700B9AE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D04CB319EC2C1700B9AE01 /* ViewController.swift */; };
 		C9D04CB719EC2C1700B9AE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D04CB519EC2C1700B9AE01 /* Main.storyboard */; };
 		C9D04CB919EC2C1700B9AE01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D04CB819EC2C1700B9AE01 /* Images.xcassets */; };
-		C9D04CBC19EC2C1700B9AE01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D04CBA19EC2C1700B9AE01 /* LaunchScreen.xib */; };
 		C9D04CC819EC2C1700B9AE01 /* QupAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D04CC719EC2C1700B9AE01 /* QupAnimationTests.swift */; };
+		C9D04CD219EC39CE00B9AE01 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D04CD119EC39CE00B9AE01 /* album.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9AE0AAF19EC9161005E276D /* daftpunk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daftpunk.png; sourceTree = "<group>"; };
+		C9AE0AB019EC9161005E276D /* aboveandbeyond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboveandbeyond.png; sourceTree = "<group>"; };
+		C9AE0AB119EC9161005E276D /* prettylights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prettylights.png; sourceTree = "<group>"; };
 		C9D04CAC19EC2C1700B9AE01 /* QupAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QupAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D04CB019EC2C1700B9AE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D04CB119EC2C1700B9AE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D04CB319EC2C1700B9AE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9D04CB619EC2C1700B9AE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D04CB819EC2C1700B9AE01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9D04CBB19EC2C1700B9AE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C9D04CC119EC2C1700B9AE01 /* QupAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QupAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D04CC619EC2C1700B9AE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D04CC719EC2C1700B9AE01 /* QupAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QupAnimationTests.swift; sourceTree = "<group>"; };
+		C9D04CD119EC39CE00B9AE01 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,14 @@
 		C9D04CAE19EC2C1700B9AE01 /* QupAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C9D04CD119EC39CE00B9AE01 /* album.png */,
+				C9AE0AAF19EC9161005E276D /* daftpunk.png */,
+				C9AE0AB019EC9161005E276D /* aboveandbeyond.png */,
+				C9AE0AB119EC9161005E276D /* prettylights.png */,
 				C9D04CB119EC2C1700B9AE01 /* AppDelegate.swift */,
 				C9D04CB319EC2C1700B9AE01 /* ViewController.swift */,
 				C9D04CB519EC2C1700B9AE01 /* Main.storyboard */,
 				C9D04CB819EC2C1700B9AE01 /* Images.xcassets */,
-				C9D04CBA19EC2C1700B9AE01 /* LaunchScreen.xib */,
 				C9D04CAF19EC2C1700B9AE01 /* Supporting Files */,
 			);
 			path = QupAnimation;
@@ -192,8 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AE0AB319EC9161005E276D /* aboveandbeyond.png in Resources */,
+				C9AE0AB419EC9161005E276D /* prettylights.png in Resources */,
 				C9D04CB719EC2C1700B9AE01 /* Main.storyboard in Resources */,
-				C9D04CBC19EC2C1700B9AE01 /* LaunchScreen.xib in Resources */,
+				C9AE0AB219EC9161005E276D /* daftpunk.png in Resources */,
+				C9D04CD219EC39CE00B9AE01 /* album.png in Resources */,
 				C9D04CB919EC2C1700B9AE01 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +254,6 @@
 				C9D04CB619EC2C1700B9AE01 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9D04CBA19EC2C1700B9AE01 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9D04CBB19EC2C1700B9AE01 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +340,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Intrepid Pursuits, LLC";
 				INFOPLIST_FILE = QupAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14EA51F7-D255-46B0-999C-3B2A2CF5AF8D";
 			};
 			name = Debug;
 		};
@@ -346,9 +352,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Intrepid Pursuits, LLC";
 				INFOPLIST_FILE = QupAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14EA51F7-D255-46B0-999C-3B2A2CF5AF8D";
 			};
 			name = Release;
 		};
@@ -405,6 +413,7 @@
 				C9D04CCD19EC2C1700B9AE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9D04CCE19EC2C1700B9AE01 /* Build configuration list for PBXNativeTarget "QupAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				C9D04CD019EC2C1700B9AE01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

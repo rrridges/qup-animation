@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="QupAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,72 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H95-ZF-ZL0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Tj-SH-RjW">
+                                        <rect key="frame" x="200" y="150" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="9ND-f2-7Tu"/>
+                                            <constraint firstAttribute="width" constant="200" id="gEf-ZM-Hej"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.38823529410000002" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2Tj-SH-RjW" firstAttribute="top" secondItem="H95-ZF-ZL0" secondAttribute="top" constant="150" id="K1w-yk-qBe"/>
+                                    <constraint firstAttribute="centerX" secondItem="2Tj-SH-RjW" secondAttribute="centerX" id="VAZ-TK-Xh6"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ek-bZ-As7">
+                                <rect key="frame" x="272" y="550" width="57" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runAnimation" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RjN-Nr-RNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4Ek-bZ-As7" secondAttribute="centerX" id="Icv-Sm-Hqh"/>
+                            <constraint firstAttribute="width" secondItem="H95-ZF-ZL0" secondAttribute="width" id="Opg-wL-EIU"/>
+                            <constraint firstAttribute="centerX" secondItem="H95-ZF-ZL0" secondAttribute="centerX" id="WBA-Ux-Rfc"/>
+                            <constraint firstAttribute="height" secondItem="H95-ZF-ZL0" secondAttribute="height" id="WGH-tb-26O"/>
+                            <constraint firstAttribute="centerY" secondItem="H95-ZF-ZL0" secondAttribute="centerY" id="YqR-Af-oIZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4Ek-bZ-As7" secondAttribute="bottom" constant="20" id="iFh-JB-GbT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="H95-ZF-ZL0" id="CgH-FF-dPb"/>
+                        <outlet property="imageView" destination="2Tj-SH-RjW" id="EVY-Up-ywI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5U6-dM-Orj">
+            <objects>
+                <viewController id="sFx-QV-P3N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lrO-F3-arz"/>
+                        <viewControllerLayoutGuide type="bottom" id="daI-nE-QGm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u1n-O8-7mR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60U-IU-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
+    <resources>
+        <image name="album.png" width="480" height="470"/>
+    </resources>
 </document>
