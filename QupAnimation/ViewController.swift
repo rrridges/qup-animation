@@ -20,20 +20,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.blackColor()
+        let imageNames = ["daftpunk.jpg", "aboveandbeyond.jpg", "killers.jpg", "album.jpg", "arianagrande.jpg", "chromeo.jpg"]
+        for name in imageNames {
+            self.images.append(UIImage(named: name))
+        }
+        
+        self.view.backgroundColor = UIColor(red: 0.09, green: 0.11, blue: 0.12, alpha: 1.0)
         
         var shape = CAShapeLayer()
         var circleMask = CAShapeLayer()
         var outline = CAShapeLayer()
         
-        
         var offsetX = (self.view.bounds.size.width - 200) / 2
-        
         var path = CGPathCreateWithEllipseInRect(CGRect(x: offsetX, y: 150, width: 200, height: 200), nil);
         
         shape.path = path;
-        circleMask.path = path;
         outline.path = path;
+        circleMask.path = CGPathCreateWithEllipseInRect(CGRect(x:0, y:0, width:200, height:200), nil);
+
         
         shape.fillColor = UIColor(red: 0.12, green: 0.73, blue: 0.85, alpha: 1).CGColor
         
@@ -41,16 +45,11 @@ class ViewController: UIViewController {
         outline.strokeColor = shape.fillColor
         outline.fillColor = UIColor.clearColor().CGColor
         
-        self.view.layer.addSublayer(shape)
-        self.view.layer.addSublayer(outline)
+        self.container.layer.addSublayer(shape)
+        self.container.layer.addSublayer(outline)
+        //self.view.layer.addSublayer(outline)
         
         var sine = CAShapeLayer()
-        
-//        var sinePath:CGMutablePath! = CGPathCreateMutable()
-//        
-//        CGPathMoveToPoint(sinePath, nil, 100, 100)
-//        CGPathAddCurveToPoint(sinePath, nil, 150, 75, 150, 125, 200, 100)
-        
         
         func createSine(start: CGPoint, amplitude: CGFloat, wavelength: CGFloat, phases: NSInteger) -> CGPath! {
             var path = CGPathCreateMutable()
@@ -70,33 +69,14 @@ class ViewController: UIViewController {
             return path
         }
         
-        let imageNames = ["daftpunk.png", "aboveandbeyond.png", "prettylights.png", "album.png"]
-        for name in imageNames {
-            self.images.append(UIImage(named: name))
-        }
+
         
         sine.path = createSine(CGPoint(x: 0, y: 375), 40, 200, 25)
         
-        //sine.path = sinePath
-        //sine.lineWidth = 2.0
-        //sine.strokeColor = UIColor.blueColor().CGColor
-        //view.layer.addSublayer(sine)
-        
-        self.view.layer.mask = sine
-        
         self.rippleMask = sine;
         self.circleShape = shape;
-        self.container.layer.mask = circleMask
-        
-        
-        //sine.position = CGPointMake(0, 10)
-        
-        
-
-        
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        self.container.layer.mask = sine
+        self.imageView.layer.mask = circleMask
     }
 
     override func didReceiveMemoryWarning() {

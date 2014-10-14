@@ -27,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.86666666670000003" green="0.38823529410000002" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="2Tj-SH-RjW" firstAttribute="top" secondItem="H95-ZF-ZL0" secondAttribute="top" constant="150" id="K1w-yk-qBe"/>
                                     <constraint firstAttribute="centerX" secondItem="2Tj-SH-RjW" secondAttribute="centerX" id="VAZ-TK-Xh6"/>
@@ -60,23 +60,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5U6-dM-Orj">
-            <objects>
-                <viewController id="sFx-QV-P3N" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lrO-F3-arz"/>
-                        <viewControllerLayoutGuide type="bottom" id="daI-nE-QGm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u1n-O8-7mR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="60U-IU-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
