@@ -27,27 +27,25 @@ class ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(red: 0.09, green: 0.11, blue: 0.12, alpha: 1.0)
         
-        var shape = CAShapeLayer()
-        var circleMask = CAShapeLayer()
-        var outline = CAShapeLayer()
-        
         var offsetX = (self.view.bounds.size.width - 200) / 2
         var path = CGPathCreateWithEllipseInRect(CGRect(x: offsetX, y: 150, width: 200, height: 200), nil);
         
+        var shape = CAShapeLayer()
         shape.path = path;
-        outline.path = path;
-        circleMask.path = CGPathCreateWithEllipseInRect(CGRect(x:0, y:0, width:200, height:200), nil);
-
-        
         shape.fillColor = UIColor(red: 0.12, green: 0.73, blue: 0.85, alpha: 1).CGColor
+        self.container.layer.addSublayer(shape)
         
+        var outline = CAShapeLayer()
+        outline.path = path;
         outline.lineWidth = 1.0
         outline.strokeColor = shape.fillColor
         outline.fillColor = UIColor.clearColor().CGColor
-        
-        self.container.layer.addSublayer(shape)
         self.container.layer.addSublayer(outline)
         //self.view.layer.addSublayer(outline)
+        
+        var circleMask = CAShapeLayer()
+        circleMask.path = CGPathCreateWithEllipseInRect(CGRect(x:0, y:0, width:200, height:200), nil);
+        self.imageView.layer.mask = circleMask
         
         var sine = CAShapeLayer()
         
@@ -69,14 +67,20 @@ class ViewController: UIViewController {
             return path
         }
         
-
-        
         sine.path = createSine(CGPoint(x: 0, y: 375), 40, 200, 25)
+//        sine.path = createSine(CGPoint(x: 0, y: 375), 40, 50, 25)
+        
+//        sine.strokeColor = UIColor.blueColor().CGColor
+//        sine.lineWidth = 1.0
+//        sine.fillColor = UIColor.clearColor().CGColor
+//        sine.fillColor = UIColor.blueColor().CGColor
+        
+        self.container.layer.mask = sine
+//        self.view.layer.addSublayer(sine)
         
         self.rippleMask = sine;
         self.circleShape = shape;
-        self.container.layer.mask = sine
-        self.imageView.layer.mask = circleMask
+
     }
 
     override func didReceiveMemoryWarning() {
